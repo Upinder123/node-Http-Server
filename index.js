@@ -53,7 +53,7 @@ fs.readFile(filePath,(err,content)=>{
             // HERE 404 ERROR PAGE LOADS
             fs.readFile(path.join(__dirname,'public','404.html'),(err,content)
             =>{
-                res.writeHead(200,{'Content-Type':'text/html'});
+                res.writeHead(200,{'Content-Type':contentType});
                 res.end(content,'utf-8');
 
             })
